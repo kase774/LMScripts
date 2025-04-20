@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cd ~
+sudo apt install gnome-themes-extra gnome-themes-standard gtk2-engines-murrine
+git clone https://github.com/vinceliuice/Colloid-gtk-theme
+cd ./Colloid-gtk-theme
+./install.sh --theme purple --tweaks catppuccin
+echo "Added theme, to clean up, press y to remove protected files"
+cd -
+rm -r -v ~/Colloid-gtk-theme
